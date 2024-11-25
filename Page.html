@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta nam0e="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="Page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <section class="sec">
+    <header>
+        <a href="#"><img src="logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>That's What<br><span>I Like</span></h2>
+            <p>Create more smiles with every sip and every bite. By creating joyful moments through our delicious and nourishing products and unique brand experiences.</p>
+            <a href="#">View All Products</a>
+        </div>
+        <div class="imgBox">
+            <img src="pepsi.png" class="pepsi">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="pepsi.png" onclick="imgSlider('pepsi.png');changeBgColor('#0062be')"></li>
+        <li><img src="pepsi 2.png" onclick="imgSlider('pepsi 2.png');changeBgColor('#e60c2c')"></li>
+        <li><img src="pepsi 3.webp" onclick="imgSlider('pepsi 3.webp');changeBgColor('#1e1e1e')"></li>
+    </ul>
+    <ul class="sci">
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+    </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
